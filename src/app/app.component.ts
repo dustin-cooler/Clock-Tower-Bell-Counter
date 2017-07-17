@@ -25,10 +25,10 @@ declare var $: any;
               <label for="endTime">End Time</label>
             </div>
             <div class="col s12 m6">
-              <a href="#">Clock Tower class</a>
+              <a href="https://github.com/dustin-cooler/Clock-Tower-Bell-Counter/blob/master/src/app/clock-tower.ts">Clock Tower class</a>
             </div>
             <div class="col s12 m6">
-              <a href="#">Full Source</a>
+              <a href="https://github.com/dustin-cooler/Clock-Tower-Bell-Counter">Full Source</a>
             </div>
           </div>
         </div>
