@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(./assets/architecture-1867278_1920.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.main-content .col {
+  text-align: center;
+  padding-bottom: 20px;
+  min-height: 65px;
+  vertical-align: bottom;
+  font-size: 1.5rem;
+}
+
+.col span.bells {
+  font-weight: bold;
+  display: block;
+  font-size: 3rem;
+}
+
+.timepicker {
+  text-align: center;
+  font-size: 1.5rem !important;
+}
+
+.main-content {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
