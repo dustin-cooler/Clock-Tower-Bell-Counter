@@ -48,7 +48,8 @@ export class ClockTower {
     [this.endHour, endMinute] = this.validateAndNormalizeTime(this.endHour, endMinute, "invalid end time: " + endTime);
 
     // Makes sure the bell will toll at least once. Assumes 14:10 -> 14:20 is 10 minutes.
-    // If this assumption is incorrect, remove this block to treat 14:10 -> 14:20 as 24 hours.
+    // To treat 14:10 -> 14:20 as 24 hours, swap the inner content of this block with the following:
+    // this.includesMidnight = true;
     if (this.startHour === this.endHour && startMinute < endMinute && startMinute > 0) {
       throw new Error("timespan too short");
     }
