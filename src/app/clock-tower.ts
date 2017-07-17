@@ -54,16 +54,16 @@ export class ClockTower {
       throw new Error("timespan too short");
     }
 
-    if (this.startHour > this.endHour) {
-      this.includesMidnight = true;
-    }
-
     if (this.startHour === this.endHour && startMinute >= endMinute) {
       this.includesMidnight = true;
     }
 
     if (startMinute > 0) {
       this.startHour = (this.startHour === 24) ? 1 : this.startHour + 1;
+    }
+
+    if (this.startHour > this.endHour) {
+      this.includesMidnight = true;
     }
   }
 
